@@ -1,0 +1,14 @@
+- [ ] Create requirements.txt with Flask, OpenCV, MediaPipe, NumPy
+- [ ] Create app.py Flask backend with:
+  - [ ] Routes: /, /state (JSON), /video_feed (MJPEG), /reset
+  - [ ] Server-side webcam capture + MediaPipe hand detection
+  - [ ] Gesture classification (fist=stone, open palm=paper, victory sign=scissors) with confidence + debouncing
+  - [ ] Winner calculation + session scoreboard + move history
+  - [ ] Webcam permission error handling (server camera unavailable)
+- [ ] Create templates/index.html (dark responsive UI, countdown, scoreboard, history, sounds)
+- [ ] Create static/css/style.css (modern responsive dark theme)
+- [ ] Create static/js/app.js (browser webcam preview + polling /state + reset + sound)
+- [ ] Add optional static/images SVG icons for stone/paper/scissors
+- [ ] Run: pip install -r requirements.txt && python app.py
+- [ ] Verify in browser: webcam permission flow, countdown, overlay, landmarks, scoring, history, sounds
+
